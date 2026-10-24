@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d20">
+  <title>Pixel Quest — La mazmorra olvidada</title>
+  <!-- Archivo único autocontenido: CSS, JavaScript y audio generado por Web Audio API. -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#070b19;--panel:#0c1429;--panel2:#101c36;--line:#26375c;--text:#edf3ff;--muted:#8797b9;--gold:#ffc857;--orange:#ff8e3c;--green:#36d58a;--red:#ff5267;--pixel:'Press Start 2P',monospace}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#1b2c54 0%,#0a1022 42%,var(--bg) 78%);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh;padding:0 20px}.app{max-width:1120px;margin:0 auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #253252}.brand{display:flex;gap:12px;align-items:center}.brand-icon{display:grid;place-items:center;width:40px;height:40px;color:#10152b;background:var(--gold);font-size:22px;box-shadow:4px 4px 0 #9a5e24}.brand strong{font:12px var(--pixel);letter-spacing:-1px;display:block}.brand small{display:block;color:#7f91b5;font-size:9px;letter-spacing:2px;margin-top:8px}.top-actions{display:flex;align-items:center;gap:12px}.chip{border:1px solid #33456b;border-radius:3px;padding:8px 10px;font-size:9px;color:#a9b8d8;letter-spacing:1px}.icon-btn{background:#121d37;border:1px solid #304266;color:var(--gold);height:34px;width:38px;font-size:18px;cursor:pointer}.screen{padding:30px 0 22px;min-height:570px}.hidden{display:none!important}.menu-screen{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:38px;min-height:620px}.menu-art{height:480px;position:relative;overflow:hidden;border:1px solid #30446e;background:linear-gradient(180deg,#0d1a3b 0%,#111a3a 48%,#201d3c 100%);box-shadow:inset 0 0 50px #060b1b;image-rendering:pixelated}.menu-art:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 31px,#35456b20 32px),repeating-linear-gradient(90deg,transparent 0 31px,#35456b20 32px);opacity:.7}.moon{position:absolute;right:60px;top:42px;width:70px;height:70px;border-radius:50%;background:#b7d6ff;box-shadow:0 0 45px #8cb8ff77}.moon:after{content:"";position:absolute;top:4px;left:14px;background:#25345d;width:60px;height:60px;border-radius:50%}.castle{position:absolute;bottom:130px;left:0;right:0;text-align:center;font-size:100px;letter-spacing:12px;color:#17284b;text-shadow:7px 7px #0a1126}.menu-torch{position:absolute;color:#ffb34d;font-size:30px;text-shadow:0 0 20px #ff7b31;animation:flicker 1.3s infinite alternate}.torch-a{left:32px;top:170px}.torch-b{right:34px;top:230px}@keyframes flicker{to{filter:brightness(1.5);transform:scale(1.08)}}.hero-large{position:absolute;bottom:57px;left:calc(50% - 46px);width:92px;height:135px;image-rendering:pixelated;filter:drop-shadow(0 8px 0 #080c1c)}.hero-large span{position:absolute;display:block}.hero-hair{top:0;left:22px;width:49px;height:35px;background:#713d2c;box-shadow:0 -8px #3b2630,8px -5px #3b2630,-8px 5px #3b2630}.hero-face{top:22px;left:31px;width:36px;height:28px;background:#f2b57d;box-shadow:0 8px #c17d55}.hero-scarf{top:47px;left:15px;width:58px;height:12px;background:#d84650;box-shadow:10px 9px #9c283e,-12px 12px #9c283e}.hero-body{top:55px;left:22px;width:48px;height:48px;background:#2e79b9;box-shadow:-8px 8px #214c8c,8px 8px #214c8c,0 45px #303a5a,24px 45px #303a5a}.hero-sword{top:32px;left:72px;font-size:60px;color:#e3f4ff;text-shadow:3px 2px #708ab4;transform:rotate(10deg)}.floor-glow{position:absolute;bottom:0;height:80px;left:0;right:0;background:linear-gradient(transparent,#ff9e3b12)}.menu-content{padding:15px 0}.eyebrow{font-size:10px;letter-spacing:2.4px;color:var(--gold);font-weight:800;margin:0 0 16px}.menu-content h1{font:clamp(38px,5vw,62px)/1.2 var(--pixel);letter-spacing:-4px;margin:0;color:#fff;text-shadow:4px 4px #233b71,7px 7px #050918}.menu-content h1 em{font-style:normal;color:var(--gold);text-shadow:4px 4px #9d4d2c,7px 7px #050918}.subtitle{font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#a9c4f7;margin:22px 0}.intro{color:#9aa9c8;line-height:1.7;font-size:13px;max-width:350px;margin-bottom:26px}.primary-btn,.secondary-btn{display:block;width:100%;padding:16px 14px;margin:10px 0;border:0;font-weight:800;font-size:11px;letter-spacing:.6px;cursor:pointer;transition:transform .12s,filter .12s}.primary-btn{background:var(--green);color:#06291f;box-shadow:0 4px 0 #16875a;border:1px solid #66f0b2}.secondary-btn{background:#111d39;border:1px solid #3c527d;color:#dce7ff;box-shadow:0 4px 0 #070d1e}.primary-btn:hover,.secondary-btn:hover{filter:brightness(1.12);transform:translateY(-2px)}.menu-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#56698e;font-size:8px;letter-spacing:1px;margin-top:28px}.game-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.game-heading h2,.info-screen h2{font:18px var(--pixel);line-height:1.7;margin:0}.objective{display:flex;gap:10px;align-items:center;padding:10px 14px;background:#111c35;border:1px solid #2b3c60;color:#8d9cba;font-size:10px;line-height:1.6}.objective-key{font-size:22px;color:var(--gold)}.objective b{color:#f2f5ff}.hud{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;background:#0d162d;border:1px solid #2b3b5d;margin-bottom:14px}.hud-group{padding:13px 16px;border-right:1px solid #263553}.hud-group:last-child{border:0}.hud-label{display:block;color:#7487ad;font-size:8px;font-weight:800;letter-spacing:1.6px;margin-bottom:8px}.hearts{color:#ff6373;letter-spacing:4px;font-size:19px;text-shadow:0 2px #8e263c}.hud-value{display:flex;align-items:center;gap:9px;font:12px var(--pixel)}.coin{color:var(--gold);font-size:18px;text-shadow:2px 2px #8e5824}.key-status{font:12px var(--pixel);color:#8291b2}.key-status.has-key{color:var(--gold);text-shadow:0 0 12px #ffb84466}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:14px}.canvas-wrap{position:relative;background:#050a17;border:1px solid #354a72;min-width:0;align-self:start}.canvas-wrap canvas{display:block;width:100%;height:auto;image-rendering:pixelated}.side-panel{display:flex;flex-direction:column;gap:12px}.panel-block{background:#0d162c;border:1px solid #283a5e;padding:16px}.panel-title{font-size:8px;letter-spacing:1.5px;color:#7e91b7;font-weight:800;margin:0 0 16px}.quest-row{display:flex;align-items:center;gap:10px;margin:15px 0}.quest-icon{width:25px;height:25px;display:grid;place-items:center;background:#1b2b4c;color:#91b6ff;border:1px solid #354c78}.quest-icon.gold{color:var(--gold)}.quest-row b{font-size:10px;display:block}.quest-row small{font-size:9px;color:#7e90b3;display:block;margin-top:5px}.check{margin-left:auto;color:#536789;font-size:18px}.check.done{color:var(--green)}.tip-block{position:relative;min-height:116px;overflow:hidden}.tip-block p:not(.panel-title){font-size:11px;line-height:1.7;color:#a7b5d2;max-width:180px}.tip-mark{position:absolute;right:14px;bottom:8px;font-size:42px;color:#344d7a}.keycap-row{display:flex;align-items:center;gap:5px;margin:10px 0}.keycap{display:grid;place-items:center;width:25px;height:25px;background:#172644;border:1px solid #40557f;border-bottom-width:3px;border-radius:3px;font-size:10px;font-weight:800}.keycap-note{font-size:9px;color:#7f91b5;margin-left:7px}.panel-note{font-size:9px;color:#66799e;line-height:1.6}.game-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:16px 0;color:#5f7398;font-size:9px;letter-spacing:1px}.game-footer i{color:var(--gold);font-style:normal}.game-footer button{background:transparent;color:#9aabcd;border:1px solid #2d4166;padding:9px 11px;font-size:8px;cursor:pointer}.toast{position:absolute;top:12px;left:50%;transform:translateX(-50%);padding:11px 14px;background:#101d37;border:1px solid #ffd166;color:#ffe6a3;font-size:11px;font-weight:800;white-space:nowrap;box-shadow:0 4px 0 #050917;z-index:3}.game-overlay{position:absolute;inset:0;background:#050918d9;display:grid;place-items:center;padding:20px;z-index:4}.overlay-card{width:min(360px,100%);padding:28px 24px;text-align:center;background:#0d1730;border:1px solid #4b6392;box-shadow:0 0 0 5px #0a1124,0 18px 60px #0009}.overlay-icon{font-size:34px;color:var(--gold);margin-bottom:18px}.overlay-card h3{font:22px var(--pixel);color:var(--gold);margin:12px 0}.overlay-card p:not(.eyebrow){font-size:12px;color:#a5b4d3;line-height:1.7}.result-stats{display:flex;justify-content:space-around;padding:14px 0;margin:18px 0;border-top:1px solid #2a3a5e;border-bottom:1px solid #2a3a5e;color:#8092b5;font-size:8px}.result-stats b{display:block;color:#fff;font:12px var(--pixel);margin-top:9px}.mobile-controls{display:none;justify-content:space-between;align-items:center;padding:14px 0}.mobile-controls button{width:48px;height:42px;background:#142341;border:1px solid #425982;border-bottom:3px solid #263b60;color:#dce8ff;font-size:17px;border-radius:5px;touch-action:manipulation}.mobile-controls div{display:flex;gap:6px}.info-screen{max-width:780px;margin:auto;padding-top:60px;min-height:620px}.back-link{background:none;border:0;color:#9db2dc;font-weight:700;cursor:pointer;margin-bottom:45px}.info-screen h2{font-size:22px;margin-bottom:28px}.controls-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.control-card{background:#0d162d;border:1px solid #2c3f65;padding:22px}.big-key{display:block;color:var(--gold);font:13px var(--pixel);margin-bottom:18px;min-height:24px}.control-card b{font-size:13px}.control-card p,.rules-box p{font-size:12px;line-height:1.7;color:#8e9fbe;margin-bottom:0}.rules-box{padding:20px;margin:18px 0 22px;background:#101d38;border-left:3px solid var(--gold)}.rules-box b{font-size:13px}.info-screen>.primary-btn{max-width:320px}.site-footer{display:flex;justify-content:center;gap:12px;align-items:center;color:#4e6083;border-top:1px solid #202e4b;padding:18px 0 24px;font-size:8px;letter-spacing:1.4px;text-align:center}.site-footer span{color:var(--gold)}
+@media(max-width:800px){body{padding:0 14px}.menu-screen{grid-template-columns:1fr;gap:22px;padding-top:22px}.menu-art{height:280px;max-width:500px;width:100%;margin:auto}.hero-large{transform:scale(.72);transform-origin:bottom center;bottom:25px}.castle{bottom:75px;font-size:75px}.moon{width:48px;height:48px;right:45px;top:28px}.moon:after{width:42px;height:42px}.menu-content{max-width:500px;width:100%;margin:auto}.menu-content h1{font-size:44px}.menu-foot{margin-top:20px}.game-layout{grid-template-columns:1fr}.side-panel{display:grid;grid-template-columns:1fr 1fr}.side-panel .panel-block:last-child{grid-column:1/-1}.game-heading h2{font-size:14px}.hud-group{padding:10px 8px}.hud-label{font-size:7px}.hud-value{font-size:10px}.hearts{font-size:15px;letter-spacing:2px}.mobile-controls{display:flex}.game-footer{flex-wrap:wrap}.game-footer span:nth-child(2){display:none}}
+@media(max-width:480px){.brand strong{font-size:9px}.brand small{font-size:7px;letter-spacing:1px}.chip{display:none}.screen{padding-top:22px}.menu-content h1{font-size:37px}.menu-art{height:245px}.hud-group{padding:9px 6px}.hud-label{letter-spacing:.7px}.hud-value{font-size:8px}.hearts{font-size:12px}.side-panel{grid-template-columns:1fr}.side-panel .panel-block:last-child{grid-column:auto}.objective{font-size:8px;padding:8px}.game-heading h2{font-size:11px}.controls-grid{grid-template-columns:1fr}.site-footer{font-size:7px;line-height:1.8}.game-footer{font-size:7px}.game-footer button{font-size:7px}.overlay-card{padding:20px 16px}.overlay-card h3{font-size:17px}}
+
+  
+/* PIXEL QUEST — visual redesign */
+:root{--bg:#070b18;--panel:#0b1429;--panel2:#111d37;--line:#314a78;--text:#f1f4ff;--muted:#92a7d2;--gold:#ffd15c;--green:#65e8a8}
+body{background:radial-gradient(ellipse at 50% 0%,#203b72 0%,#0b1430 35%,#050914 82%);background-attachment:fixed}
+.topbar{border-bottom:1px solid #29416d;position:relative}
+.topbar:after{content:"";height:2px;position:absolute;bottom:-1px;left:0;width:160px;background:linear-gradient(90deg,#ffca59,transparent)}
+.brand-icon{background:linear-gradient(135deg,#fff0a0,#ffad39);box-shadow:0 0 18px #ffb43c55,4px 4px 0 #844923;transform:rotate(45deg);font-size:18px}
+.brand-icon::first-letter{transform:rotate(-45deg)}
+.brand strong{font-size:11px;letter-spacing:0;color:#fff;text-shadow:2px 2px #34518a}
+.menu-screen{gap:46px}
+.menu-art{border:2px solid #344d80;box-shadow:0 0 0 5px #0a1022,0 18px 55px #0007,inset 0 0 55px #020716;background:linear-gradient(180deg,#091630,#102c51 48%,#191e3a 100%)}
+.menu-art:before{background:repeating-linear-gradient(0deg,transparent 0 31px,#607bb31c 32px),repeating-linear-gradient(90deg,transparent 0 31px,#607bb31c 32px);opacity:.85}
+.menu-art:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,#70b9ff12,transparent 40%,#ffc34b0d 70%),linear-gradient(0deg,#050a18aa,transparent 40%)}
+.moon{background:#b9e2ff;box-shadow:0 0 28px #85c9ff88,0 0 70px #75b4ff55}
+.castle{font-size:95px;color:#1a2b50;text-shadow:5px 5px #0a142b,-2px -2px #2a416b;letter-spacing:6px}
+.menu-content h1{font-size:clamp(36px,4.5vw,56px);letter-spacing:-3px;color:#ffe6a0;text-shadow:2px 2px #bd7436,4px 4px #713a36,7px 8px #050918}
+.menu-content h1 em{color:#fff0bd;text-shadow:2px 2px #cf8038,4px 4px #713a36,7px 8px #050918}
+.subtitle{color:#9bc9ff;letter-spacing:2px}
+.primary-btn{background:linear-gradient(180deg,#ffe18a,#ffb93f);border:1px solid #fff0a0;color:#39200e;box-shadow:0 4px 0 #985126,0 0 22px #ffbd4c22}
+.secondary-btn{background:linear-gradient(180deg,#1a2c52,#101a35);border:1px solid #4969a0;box-shadow:0 4px 0 #060b18;color:#dbe8ff}
+.eyebrow{color:#ffc95c}
+.hud,.panel-block{background:linear-gradient(145deg,#101d38,#0a1226);border-color:#2b416b;box-shadow:inset 0 1px #ffffff08}
+.hud{box-shadow:0 6px 0 #060a16}
+.hud-label{color:#8ea5d0}
+.game-heading h2,.info-screen h2{color:#f2f5ff;text-shadow:2px 2px #172b50}
+.canvas-wrap{border:2px solid #415d8e;box-shadow:0 0 0 4px #0a1022,0 12px 32px #0005}
+.canvas-wrap canvas{image-rendering:pixelated}
+.objective{background:#111f3d;border-color:#354d7c}
+.quest-icon{background:#1a2c50;border-color:#415d8d}
+.panel-title{color:#91acd8}
+.keycap{background:linear-gradient(#22385e,#142440);border-color:#4a6596;border-bottom-color:#243b63}
+.toast{background:#16284b;border:2px solid #ffd15c;color:#fff0ba;box-shadow:0 4px 0 #060b18,0 0 24px #ffc85733}
+.overlay-card{background:linear-gradient(145deg,#142345,#0a1124);border:2px solid #5b77ad;box-shadow:0 0 0 5px #080e1d,0 0 35px #7caaff22}
+.overlay-card h3{ text-shadow:3px 3px #573b38}
+.game-footer{border-top:1px solid #26385c;margin-top:10px}
+.site-footer{border-color:#26385c;color:#667da7}
+.controls-grid .control-card{background:linear-gradient(145deg,#111e39,#0a1225);border-color:#2c426d;box-shadow:inset 0 1px #ffffff08}
+.rules-box{background:#111e39}
+.mobile-controls button{background:linear-gradient(#20375d,#142443);border-color:#4a6596;border-bottom-color:#263e69}
+@media(max-width:800px){.menu-screen{gap:28px}.menu-art{box-shadow:0 0 0 3px #0a1022,0 12px 35px #0007}}
+</style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">◆</span><div><strong>PIXEL QUEST</strong><small>LA MAZMORRA OLVIDADA</small></div></div>
+      <div class="top-actions"><span class="chip">PIXEL RPG</span><button id="soundBtn" class="icon-btn" aria-label="Activar o desactivar sonido">♫</button></div>
+    </header>
+
+    <section id="menuScreen" class="screen menu-screen">
+      <div class="menu-art">
+        <div class="moon"></div><div class="castle">▥ ▥ ▥</div>
+        <div class="menu-torch torch-a">♨</div><div class="menu-torch torch-b">♨</div>
+        <div class="hero-large"><span class="hero-hair"></span><span class="hero-face"></span><span class="hero-scarf"></span><span class="hero-body"></span><span class="hero-sword">╱</span></div>
+        <div class="floor-glow"></div>
+      </div>
+      <div class="menu-content">
+        <p class="eyebrow">UNA AVENTURA DE 8 BITS</p>
+        <h1>PIXEL<br><em>QUEST</em></h1>
+        <p class="subtitle">Explora. Recolecta. Escapa.</p>
+        <p class="intro">Una antigua mazmorra guarda un tesoro… y no quiere dejarte salir.</p>
+        <button id="playBtn" class="primary-btn">▶ &nbsp; COMENZAR AVENTURA</button>
+        <button id="controlsBtn" class="secondary-btn">⌨ &nbsp; CONTROLES</button>
+        <div class="menu-foot"><span>WASD / FLECHAS PARA MOVERTE</span><span>HECHO CON HTML · CSS · JS</span></div>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="screen game-screen hidden">
+      <div class="game-heading">
+        <div><p class="eyebrow">NIVEL 01 / LA CRIPTA</p><h2>Encuentra la salida</h2></div>
+        <div class="objective"><span class="objective-key">✦</span><span>OBJETIVO<br><b>Llave + puerta</b></span></div>
+      </div>
+      <div class="hud">
+        <div class="hud-group"><span class="hud-label">VIDAS</span><div id="hearts" class="hearts">♥ ♥ ♥</div></div>
+        <div class="hud-group"><span class="hud-label">MONEDAS</span><div class="hud-value"><span class="coin">●</span><b id="coinCount">00</b></div></div>
+        <div class="hud-group"><span class="hud-label">LLAVE</span><div id="keyStatus" class="key-status">—</div></div>
+        <div class="hud-group"><span class="hud-label">TIEMPO</span><div id="timer" class="hud-value">00:00</div></div>
+      </div>
+      <div class="game-layout">
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="640" height="480" aria-label="Mazmorra de Pixel Quest"></canvas>
+          <div id="toast" class="toast hidden"></div>
+          <div id="gameOverlay" class="game-overlay hidden">
+            <div class="overlay-card"><div id="overlayIcon" class="overlay-icon">✦</div><p id="overlayKicker" class="eyebrow">MISIÓN COMPLETADA</p><h3 id="overlayTitle">¡VICTORIA!</h3><p id="overlayText">Has escapado de la mazmorra.</p><div class="result-stats"><span>MONEDAS <b id="finalCoins">0</b></span><span>TIEMPO <b id="finalTime">00:00</b></span></div><button id="againBtn" class="primary-btn">↻ &nbsp; JUGAR DE NUEVO</button><button id="menuBtn" class="secondary-btn">⌂ &nbsp; VOLVER AL MENÚ</button></div>
+          </div>
+        </div>
+        <aside class="side-panel">
+          <div class="panel-block"><p class="panel-title">DIARIO DE MISIÓN</p><div class="quest-row"><span class="quest-icon">◈</span><div><b>Encuentra la llave</b><small id="questKey">Todavía está escondida</small></div><span id="questKeyCheck" class="check">○</span></div><div class="quest-row"><span class="quest-icon gold">●</span><div><b>Recoge monedas</b><small>Brillan en los pasillos</small></div><span id="questCoinCheck" class="check">○</span></div><div class="quest-row"><span class="quest-icon">⇧</span><div><b>Abre la salida</b><small id="questDoor">La puerta está cerrada</small></div><span id="questDoorCheck" class="check">○</span></div></div>
+          <div class="panel-block tip-block"><p class="panel-title">CONSEJO DEL EXPLORADOR</p><p id="tipText">No todo lo que brilla es peligroso. ¡Recoge las monedas!</p><div class="tip-mark">✧</div></div>
+          <div class="panel-block"><p class="panel-title">CONTROLES</p><div class="keycap-row"><span class="keycap">W</span><span class="keycap">A</span><span class="keycap">S</span><span class="keycap">D</span><span class="keycap-note">Mover personaje</span></div><div class="keycap-row"><span class="keycap">↑</span><span class="keycap">←</span><span class="keycap">↓</span><span class="keycap">→</span><span class="keycap-note">También funciona</span></div><p class="panel-note">Toca las flechas en pantalla si juegas desde el móvil.</p></div>
+        </aside>
+      </div>
+      <div class="mobile-controls" aria-label="Controles táctiles">
+        <button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div>
+      </div>
+      <footer class="game-footer"><span>PIXEL QUEST <i>◆</i> BUILD 1.0</span><span id="statusText">Tu aventura comienza aquí.</span><button id="restartBtn">REINICIAR NIVEL ↻</button></footer>
+    </section>
+
+    <section id="controlsScreen" class="screen info-screen hidden">
+      <button class="back-link" id="backBtn">← VOLVER</button>
+      <p class="eyebrow">ANTES DE ENTRAR</p><h2>Controles del explorador</h2>
+      <div class="controls-grid"><div class="control-card"><span class="big-key">W A S D</span><b>Movimiento</b><p>Muévete por los pasillos y evita los enemigos.</p></div><div class="control-card"><span class="big-key">↑ ↓ ← →</span><b>Flechas</b><p>También puedes usar las flechas del teclado.</p></div><div class="control-card"><span class="big-key">TOCAR</span><b>Móvil / tablet</b><p>Usa los controles que aparecen debajo del mapa.</p></div><div class="control-card"><span class="big-key">♥ ♥ ♥</span><b>Cuida tus vidas</b><p>Si un enemigo te toca, perderás una vida. Sin vidas, termina la partida.</p></div></div>
+      <div class="rules-box"><b>¿Cómo se gana?</b><p>Consigue la llave dorada y llega a la puerta. Las monedas suman puntos. ¡No necesitas recogerlas todas para escapar!</p></div>
+      <button id="controlsPlayBtn" class="primary-btn">ENTENDIDO, ¡A JUGAR! →</button>
+    </section>
+    <footer class="site-footer">UN PEQUEÑO JUEGO DE AVENTURA <span>✦</span> CREADO CON HTML, CSS Y JAVASCRIPT</footer>
+  </main>
+  <script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const menuScreen = $('menuScreen'), gameScreen = $('gameScreen'), controlsScreen = $('controlsScreen');
+  const canvas = $('gameCanvas'), ctx = canvas.getContext('2d');
+  ctx.imageSmoothingEnabled = false;
+
+  const TILE = 32, COLS = 20, ROWS = 15;
+  // # = wall, . = floor, C = coin, K = key, D = door, E = enemy start
+  const level = [
+    "####################",
+    "#....C......#.....D#",
+    "#.####.####.#.###..#",
+    "#....#....#.#...C..#",
+    "###..#.C..#...##...#",
+    "#....####.#####.####",
+    "#.C......C.....#...#",
+    "#.####.######..#...#",
+    "#....#......#..#C..#",
+    "##.#.#.####.#.####.#",
+    "#..#...#....#......#",
+    "#.#####.#.########.#",
+    "#.....C.#....K.....#",
+    "#.............E....#",
+    "####################"
+  ];
+  let map, player, coins, key, door, enemies, lives, collected, hasKey, startAt, elapsed, running, ended, raf, toastTimer, soundOn = false, audioCtx;
+
+  function resetGame() {
+    map = level.map(row => row.split(''));
+    player = {x:1.5*TILE,y:1.5*TILE, size:19, speed:2.25, invuln:0};
+    coins = []; key = null; door = null; enemies = [];
+    for(let r=0;r<ROWS;r++) for(let c=0;c<COLS;c++){
+      const t=map[r][c], pos={x:c*TILE+TILE/2,y:r*TILE+TILE/2};
+      if(t==='C'){coins.push({...pos, taken:false, phase:Math.random()*6});map[r][c]='.';}
+      if(t==='K'){key={...pos,taken:false};map[r][c]='.';}
+      if(t==='D'){door={...pos};map[r][c]='.';}
+      if(t==='E'){enemies.push({...pos,dx:-1,dy:0,step:0,alive:true});map[r][c]='.';}
+    }
+    // Add a second wandering slime for a little challenge.
+    enemies.push({x:5.5*TILE,y:3.5*TILE,dx:0,dy:1,step:0,alive:true});
+    lives=3;collected=0;hasKey=false;startAt=performance.now();elapsed=0;running=true;ended=false;
+    $('gameOverlay').classList.add('hidden');$('coinCount').textContent='00';$('keyStatus').textContent='—';$('keyStatus').classList.remove('has-key');
+    $('hearts').textContent='♥ ♥ ♥';$('questKey').textContent='Todavía está escondida';$('questKeyCheck').textContent='○';$('questKeyCheck').classList.remove('done');
+    $('questCoinCheck').textContent='○';$('questCoinCheck').classList.remove('done');$('questDoor').textContent='La puerta está cerrada';$('questDoorCheck').textContent='○';$('questDoorCheck').classList.remove('done');
+    $('statusText').textContent='Busca la llave dorada y encuentra la salida.';showToast('¡La mazmorra te espera!');playTone(440,.08);
+  }
+  function showScreen(which){menuScreen.classList.toggle('hidden',which!=='menu');gameScreen.classList.toggle('hidden',which!=='game');controlsScreen.classList.toggle('hidden',which!=='controls');}
+  function showToast(msg){const el=$('toast');el.textContent=msg;el.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.add('hidden'),1800);}
+  function playTone(freq,duration=.08){if(!soundOn)return;try{audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='square';o.frequency.value=freq;g.gain.value=.035;o.connect(g);g.connect(audioCtx.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+duration);o.stop(audioCtx.currentTime+duration);}catch(e){}}
+  // Música chiptune original generada con Web Audio; no requiere archivos externos.
+  let musicEnabled=true, musicTimer=null, musicStep=0, musicGain=null;
+  const melody=[523,0,659,0,784,659,0,523,587,0,698,0,880,698,659,0,523,0,659,784,0,988,784,659];
+  function stopMusic(){if(musicTimer)clearInterval(musicTimer);musicTimer=null;if(musicGain&&audioCtx){try{musicGain.gain.setTargetAtTime(.0001,audioCtx.currentTime,.06);}catch(e){}}}
+  function startMusic(){
+    if(!musicEnabled||!audioCtx)return;stopMusic();
+    musicGain=audioCtx.createGain();musicGain.gain.value=.12;musicGain.connect(audioCtx.destination);musicStep=0;
+    musicTimer=setInterval(()=>{
+      if(!musicEnabled||!audioCtx||audioCtx.state!=='running')return;
+      const f=melody[musicStep%melody.length];
+      if(f){const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='square';o.frequency.value=f;g.gain.setValueAtTime(.0001,audioCtx.currentTime);g.gain.linearRampToValueAtTime(.16,audioCtx.currentTime+.015);g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.14);o.connect(g);g.connect(musicGain);o.start();o.stop(audioCtx.currentTime+.15);}
+      musicStep++;
+    },170);
+  }
+  function wallAt(px,py){const c=Math.floor(px/TILE),r=Math.floor(py/TILE);return r<0||r>=ROWS||c<0||c>=COLS||map[r][c]==='#';}
+  function canMove(x,y){const s=player.size/2-2;return !wallAt(x-s,y-s)&&!wallAt(x+s,y-s)&&!wallAt(x-s,y+s)&&!wallAt(x+s,y+s);}
+  function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
+  function update(dt,now){
+    if(!running||ended)return;
+    elapsed=(now-startAt)/1000;
+    let dx=0,dy=0;
+    if(keys.has('ArrowLeft')||keys.has('a')||keys.has('A'))dx--;
+    if(keys.has('ArrowRight')||keys.has('d')||keys.has('D'))dx++;
+    if(keys.has('ArrowUp')||keys.has('w')||keys.has('W'))dy--;
+    if(keys.has('ArrowDown')||keys.has('s')||keys.has('S'))dy++;
+    if(dx&&dy){dx*=.707;dy*=.707;}
+    const nx=player.x+dx*player.speed*dt*60,ny=player.y+dy*player.speed*dt*60;
+    if(canMove(nx,player.y))player.x=nx;if(canMove(player.x,ny))player.y=ny;
+    if(player.invuln>0)player.invuln-=dt;
+    coins.forEach(c=>{if(!c.taken&&distance(player,c)<22){c.taken=true;collected++;$('coinCount').textContent=String(collected).padStart(2,'0');playTone(820,.07);$('statusText').textContent='¡Moneda recogida!';$('questCoinCheck').textContent='✓';$('questCoinCheck').classList.add('done');}});
+    if(key&&!key.taken&&distance(player,key)<22){key.taken=true;hasKey=true;$('keyStatus').textContent='✦';$('keyStatus').classList.add('has-key');$('questKey').textContent='¡La tienes! Ve a la puerta';$('questKeyCheck').textContent='✓';$('questKeyCheck').classList.add('done');$('statusText').textContent='¡Conseguiste la llave! Busca la puerta.';showToast('✦ ¡LLAVE DORADA CONSEGUIDA!');playTone(980,.16);}
+    enemies.forEach(e=>{
+      if(!e.alive)return;e.step+=dt;
+      // Enemy changes direction at random intervals or when blocked.
+      if(e.step>1.0+Math.random()*1.2){e.step=0;const dirs=[[1,0],[-1,0],[0,1],[0,-1]].sort(()=>Math.random()-.5);for(const d of dirs){if(!wallAt(e.x+d[0]*5,e.y+d[1]*5)){e.dx=d[0];e.dy=d[1];break;}}}
+      const ex=e.x+e.dx*dt*60*.85,ey=e.y+e.dy*dt*60*.85;
+      if(!wallAt(ex,ey)){e.x=ex;e.y=ey;}else{e.dx*=-1;e.dy*=-1;}
+      if(player.invuln<=0&&distance(player,e)<23){lives--;player.invuln=1.5;playTone(170,.2);$('hearts').textContent='♥ '.repeat(lives)+'♡ '.repeat(3-lives);$('statusText').textContent='¡Cuidado! Un enemigo te ha golpeado.';showToast(lives?'¡Has perdido una vida!':'¡Te has quedado sin vidas!');if(lives<=0)finish(false);}
+    });
+    if(door&&distance(player,door)<23){if(hasKey)finish(true);else if(!ended){$('questDoor').textContent='Necesitas la llave dorada';}}
+    $('timer').textContent=formatTime(elapsed);
+  }
+  function formatTime(s){s=Math.max(0,Math.floor(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
+  function finish(win){ended=true;running=false;$('gameOverlay').classList.remove('hidden');$('overlayIcon').textContent=win?'♛':'☠';$('overlayKicker').textContent=win?'MISIÓN COMPLETADA':'FIN DE LA AVENTURA';$('overlayTitle').textContent=win?'¡VICTORIA!':'¡GAME OVER!';$('overlayTitle').style.color=win?'#ffc857':'#ff5267';$('overlayText').textContent=win?'Has escapado de la mazmorra. ¡Eres una leyenda!':'La mazmorra te ha vencido… ¿te atreves a intentarlo otra vez?';$('finalCoins').textContent=collected;$('finalTime').textContent=formatTime(elapsed);$('questDoor').textContent=win?'¡Has escapado!':'Salida sin alcanzar';if(win){$('questDoorCheck').textContent='✓';$('questDoorCheck').classList.add('done');$('statusText').textContent='¡Victoria! Has escapado con '+collected+' monedas.';playTone(660,.12);setTimeout(()=>playTone(880,.2),130);}else{$('statusText').textContent='Fin de la partida. ¡Puedes volver a intentarlo!';}}
+  function drawTile(c,r,t){
+    const x=c*TILE,y=r*TILE;
+    if(t==='#'){
+      ctx.fillStyle='#111b32';ctx.fillRect(x,y,TILE,TILE);
+      ctx.fillStyle='#253957';ctx.fillRect(x+1,y+1,30,5);
+      ctx.fillStyle='#1b2a46';ctx.fillRect(x+2,y+7,28,23);
+      ctx.fillStyle='#344966';ctx.fillRect(x+3,y+8,11,2);ctx.fillRect(x+18,y+20,10,2);
+      ctx.fillStyle='#0a1225';ctx.fillRect(x,y+29,32,3);
+      ctx.fillStyle='#405678';ctx.fillRect(x+1,y+1,3,3);ctx.fillRect(x+27,y+2,3,2);
+      if((c+r)%3===0){ctx.fillStyle='#536582';ctx.fillRect(x+20,y+12,3,2);ctx.fillStyle='#10182b';ctx.fillRect(x+21,y+14,2,3);}
+      if((c*3+r)%5===0){ctx.fillStyle='#1d5b50';ctx.fillRect(x+7,y+23,3,4);ctx.fillRect(x+10,y+25,2,2);}
+    } else {
+      ctx.fillStyle=((c+r)%2===0)?'#252d45':'#20283f';ctx.fillRect(x,y,TILE,TILE);
+      ctx.fillStyle='#303953';ctx.fillRect(x+2,y+2,28,1);ctx.fillStyle='#171f35';ctx.fillRect(x+3,y+28,25,2);
+      if((c*7+r*3)%7===0){ctx.fillStyle='#3b455c';ctx.fillRect(x+7,y+10,2,2);ctx.fillRect(x+20,y+18,3,1);}
+      if((c+r*2)%9===0){ctx.fillStyle='#121a2d';ctx.fillRect(x+14,y+5,4,1);ctx.fillRect(x+16,y+6,1,3);}
+    }
+  }
+  function drawCoin(c,now){if(c.taken)return;const pulse=Math.sin(now/170+c.phase)*2;ctx.fillStyle='#8e5423';ctx.fillRect(c.x-7,c.y-8,15,17);ctx.fillStyle='#ffb52e';ctx.fillRect(c.x-6,c.y-9+pulse,12,16);ctx.fillStyle='#ffe58b';ctx.fillRect(c.x-3,c.y-6+pulse,4,10);ctx.fillStyle='#c97824';ctx.fillRect(c.x+3,c.y-5+pulse,2,9);}
+  function drawKey(k){if(k.taken)return;ctx.fillStyle='#ffc94f';ctx.fillRect(k.x-2,k.y-10,5,20);ctx.fillRect(k.x-8,k.y-10,8,5);ctx.fillRect(k.x-8,k.y-10,4,9);ctx.fillRect(k.x-2,k.y+4,9,4);ctx.fillStyle='#fff0a2';ctx.fillRect(k.x-1,k.y-8,2,10);}
+  function drawDoor(d){ctx.fillStyle='#4b2b31';ctx.fillRect(d.x-14,d.y-17,28,34);ctx.fillStyle='#b46b36';ctx.fillRect(d.x-11,d.y-14,22,29);ctx.fillStyle='#5e3a35';ctx.fillRect(d.x-7,d.y-10,14,24);ctx.fillStyle='#ffc857';ctx.fillRect(d.x+5,d.y+2,3,3);ctx.fillStyle=hasKey?'#ffcf64':'#8c6d44';ctx.fillRect(d.x-4,d.y-19,8,3);if(hasKey){ctx.fillStyle='#ffcf64';ctx.fillRect(d.x-3,d.y-25,6,2);}}
+  function drawEnemy(e,now){
+    if(!e.alive)return;const bob=Math.sin(now/105+e.x)*2,x=Math.round(e.x),y=Math.round(e.y+bob);
+    ctx.fillStyle='#080d1a';ctx.fillRect(x-12,y+9,24,5);
+    ctx.fillStyle='#23624f';ctx.fillRect(x-11,y-3,22,13);ctx.fillRect(x-8,y-9,16,7);ctx.fillRect(x-5,y-12,10,4);
+    ctx.fillStyle='#46bd86';ctx.fillRect(x-8,y-7,16,8);ctx.fillRect(x-5,y-11,10,4);
+    ctx.fillStyle='#9af0b8';ctx.fillRect(x-5,y-8,3,2);ctx.fillRect(x+3,y-8,3,2);
+    ctx.fillStyle='#f7f2d5';ctx.fillRect(x-7,y-3,5,5);ctx.fillRect(x+3,y-3,5,5);
+    ctx.fillStyle='#14213a';ctx.fillRect(x-5,y-2,2,3);ctx.fillRect(x+5,y-2,2,3);
+    ctx.fillStyle='#143f3b';ctx.fillRect(x-8,y+7,5,4);ctx.fillRect(x+4,y+7,5,4);
+  }
+  function drawPlayer(now){
+    if(player.invuln>0&&Math.floor(now/85)%2===0)return;
+    const x=Math.round(player.x),y=Math.round(player.y),bob=(keys.size?Math.sin(now/48)*1.5:0);
+    ctx.fillStyle='#080d1a';ctx.fillRect(x-11,y+11,22,5);
+    // boots and trousers
+    ctx.fillStyle='#182642';ctx.fillRect(x-8,y+5+bob,7,10);ctx.fillRect(x+2,y+5-bob,7,10);
+    ctx.fillStyle='#74503d';ctx.fillRect(x-9,y+12+bob,8,4);ctx.fillRect(x+2,y+12-bob,8,4);
+    // tunic and sleeves
+    ctx.fillStyle='#174d85';ctx.fillRect(x-11,y-7+bob,22,16);
+    ctx.fillStyle='#287fc0';ctx.fillRect(x-8,y-8+bob,16,12);
+    ctx.fillStyle='#77c9ef';ctx.fillRect(x-4,y-6+bob,3,8);
+    ctx.fillStyle='#f0b27a';ctx.fillRect(x-7,y-20+bob,15,14);
+    // hair, face and headband
+    ctx.fillStyle='#392832';ctx.fillRect(x-9,y-24+bob,18,8);ctx.fillRect(x-11,y-20+bob,5,8);ctx.fillRect(x+5,y-21+bob,5,5);
+    ctx.fillStyle='#a9674c';ctx.fillRect(x-7,y-12+bob,14,3);
+    ctx.fillStyle='#252335';ctx.fillRect(x+2,y-16+bob,3,3);
+    ctx.fillStyle='#e34d5d';ctx.fillRect(x-13,y-6+bob,23,5);ctx.fillRect(x+4,y-1+bob,10,4);ctx.fillStyle='#ff8c88';ctx.fillRect(x-8,y-5+bob,8,2);
+    // sword
+    ctx.fillStyle='#6d7f9f';ctx.fillRect(x+12,y-18+bob,4,23);ctx.fillStyle='#e0f4ff';ctx.fillRect(x+13,y-17+bob,2,17);ctx.fillStyle='#d7a85c';ctx.fillRect(x+9,y+2+bob,10,3);
+  }
+  function draw(now){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++)drawTile(c,r,map[r][c]);
+    // Warm torch glows add depth while keeping crisp pixel art.
+    const torches=[[2,2],[14,2],[3,8],[17,11],[10,12]];
+    torches.forEach(([c,r],i)=>{const x=c*TILE+16,y=r*TILE+16;ctx.fillStyle='#ff9b3b12';ctx.fillRect(x-18,y-18,36,36);ctx.fillStyle='#6e452d';ctx.fillRect(x-3,y-8,6,14);ctx.fillStyle='#ffb64c';ctx.fillRect(x-3,y-12+(Math.sin(now/100+i)*2),6,7);ctx.fillStyle='#ffe49a';ctx.fillRect(x-1,y-10+(Math.sin(now/100+i)*2),2,4);});
+    if(door)drawDoor(door);coins.forEach(c=>drawCoin(c,now));if(key)drawKey(key);enemies.forEach(e=>drawEnemy(e,now));drawPlayer(now);
+    // Slight vignette, drawn in tile-sized pixels for a retro atmosphere.
+    const grad=ctx.createRadialGradient(320,240,100,320,240,430);grad.addColorStop(0,'#00000000');grad.addColorStop(1,'#03071577');ctx.fillStyle=grad;ctx.fillRect(0,0,640,480);
+  }
+  const keys=new Set();
+  function loop(now){const dt=Math.min(.033,(now-(loop.last||now))/1000);loop.last=now;if(!gameScreen.classList.contains('hidden')){update(dt,now);if(map)draw(now);}raf=requestAnimationFrame(loop);}
+  window.addEventListener('keydown',e=>{const k=e.key;if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' '].includes(k))e.preventDefault();keys.add(k);});
+  window.addEventListener('keyup',e=>keys.delete(e.key));
+  window.addEventListener('blur',()=>keys.clear());
+  document.querySelectorAll('[data-dir]').forEach(btn=>{
+    const mapDir={up:'ArrowUp',down:'ArrowDown',left:'ArrowLeft',right:'ArrowRight'};
+    const down=e=>{e.preventDefault();keys.add(mapDir[btn.dataset.dir]);};
+    const up=e=>{e.preventDefault();keys.delete(mapDir[btn.dataset.dir]);};
+    btn.addEventListener('pointerdown',down);btn.addEventListener('pointerup',up);btn.addEventListener('pointerleave',up);btn.addEventListener('pointercancel',up);
+  });
+  $('playBtn').addEventListener('click',async()=>{showScreen('game');resetGame();if(musicEnabled){audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();try{await audioCtx.resume();startMusic();}catch(e){}}});
+  $('controlsBtn').addEventListener('click',()=>showScreen('controls'));
+  $('controlsPlayBtn').addEventListener('click',async()=>{showScreen('game');resetGame();if(musicEnabled){audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();try{await audioCtx.resume();startMusic();}catch(e){}}});
+  $('backBtn').addEventListener('click',()=>showScreen('menu'));
+  $('againBtn').addEventListener('click',resetGame);
+  $('restartBtn').addEventListener('click',resetGame);
+  $('menuBtn').addEventListener('click',()=>{keys.clear();showScreen('menu');});
+  $('soundBtn').addEventListener('click',async()=>{soundOn=!soundOn;musicEnabled=soundOn;$('soundBtn').textContent=soundOn?'♫':'♪';$('soundBtn').style.color=soundOn?'#36d58a':'#ffc857';if(soundOn){audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();await audioCtx.resume();playTone(600,.1);startMusic();showToast('♫ Música y sonidos activados');}else{stopMusic();showToast('Sonido desactivado');}});
+  showScreen('menu');requestAnimationFrame(loop);
+})();
+
+  </script>
+</body>
+</html>
